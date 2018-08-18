@@ -1,0 +1,27 @@
+img
+{
+    margin: 100px;
+}
+
+#title
+{
+	color:         white;
+	font-family:   Forte;
+	font-size:     90px;
+}
+
+body
+{
+	background-color: gray;
+	padding:          30px;
+}
+
+progress
+{
+	position: fixed;
+	width: 900px;
+	height: 100px;
+
+	top: 1600px; 
+	left: 40px;
+}
