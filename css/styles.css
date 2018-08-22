@@ -1,40 +1,36 @@
-#banner
-{
-	padding: 20px;
-	font-family: Arial;
-	font-size: 60px;
-	color: white;
-	background-color: orangered;
-	margin: auto;
-	width: 350px;
-	height: 80px;
-}
+/* CSS con Media Queries */
 
-img
+@media screen and (max-height: 640px), (max-width: 360px) 
 {
-	display:block; 
-	margin:auto;
-}
-
-#title
-{
-	color:         white;
-	font-family:   Forte;
-	font-size:     90px;
-}
-
-body
-{
-	background-color: gray;
-	padding: 40px;
-}
-
-progress
-{
-	position: fixed;
-	width: 900px;
-	height: 100px;
-
-	top: 1600px; 
-	left: 40px;
-}
+	#banner
+	{
+		padding: 3px;
+		font-family: Arial;
+		font-size: 14px;
+		color: white;
+		background-color: orangered;
+		margin: auto;
+		width: 80px;
+		height: 20px;
+		border-style: dashed;
+	}
+	
+	img
+	{
+		display:block; 
+		margin:auto;
+	}
+	
+	#title
+	{
+		color:         white;
+		font-family:   Forte;
+		font-size:     34px;
+	}
+	
+	body
+	{
+		background-color: gray;
+		padding: 40px;
+	}
+}	
