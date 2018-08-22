@@ -7,5 +7,3 @@ function show()
 {
     document.location.href = "menu.html";
 }
-
-

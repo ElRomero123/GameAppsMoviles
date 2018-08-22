@@ -2,9 +2,38 @@
 
 @media screen and (max-height: 640px), (max-width: 360px) 
 {
+	.menuTag
+	{
+		color: white;
+		font-family: arial;
+	}
+
+	.menuIcon
+	{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+	}
+
+	.card
+	{
+		transition: 0.15s;
+		width: 130px;
+		height: 50px;
+		margin: 5px;
+		display: block;
+		background-color: violet;
+		padding: 10px;
+	}
+
+	.card:hover
+	{
+		width: 150px;
+	}
+
 	#banner
 	{
-		padding: 3px;
+		padding: 6px;
 		font-family: Arial;
 		font-size: 14px;
 		color: white;
@@ -17,15 +46,16 @@
 	
 	img
 	{
-		display:block; 
+		display: block; 
 		margin:auto;
 	}
 	
 	#title
 	{
 		color:         white;
-		font-family:   Forte;
+		font-family:   sans-serif;
 		font-size:     34px;
+		margin: 5px;
 	}
 	
 	body
@@ -33,4 +63,4 @@
 		background-color: gray;
 		padding: 40px;
 	}
-}	
+}
