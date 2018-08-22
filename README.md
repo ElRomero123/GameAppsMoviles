@@ -1,10 +1,10 @@
-Juego GameDieOrLive
+# Juego Die Or Live
 
-Publicaciones digitales - Diseño grafico 
+Publicaciones digitales - Diseño gráfico 
 
-- Alexander Moreno Pertuz
+- Alexander Moreno Pertuz.
 
-Aplicaciones Moviles - Ingeniería de Sistemas
+Aplicaciones Móviles - Ingeniería de Sistemas
 
-- Juan Pablo Romero Londoño
-- Daniela Andrea Salazar Acevedo
+- Juan Pablo Romero Londoño.
+- Daniela Andrea Salazar Acevedo.
