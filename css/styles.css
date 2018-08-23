@@ -148,23 +148,36 @@
 	.menuBody
 	{
 		background-image: url('../img/game/init.png');
-		background-color: gray;
 		padding: 40px;
 	}
 
 	#startBody
 	{
 		background-image: url('../img/game/singleplayer.png');
-		background-color: gray;
 		padding: 40px;
 	}
 
 	#multiBody
 	{
 		background-image: url('../img/game/multi.png');
-		background-color: gray;
 		padding: 40px;
 	}
 
+	#helpBody
+	{
+		background-image: url('../img/game/help.png');
+		padding: 40px;
+	}
 
+	#creditsBody
+	{
+        background-image: url('../img/game/credits.png');
+		padding: 40px;
+	}
+
+	#gameBody
+	{
+        background-image: url('../img/game/alfabeto.png');
+		padding: 40px;
+	}
 }
