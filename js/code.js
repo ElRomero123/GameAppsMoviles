@@ -1,5 +1,3 @@
-
-
 window.onload = inicializar;
 
 function inicializar()
@@ -9,5 +7,5 @@ function inicializar()
 
 function cargarJuego()
 {
-    document.location.href = "game.html";
+    document.location.href = "menu.html";
 }

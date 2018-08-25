@@ -29,20 +29,20 @@ function inicializarEventos()
 
 function showJugador()
 {
-    document.location.href = "jugador.html";
+    document.location.href = "options/jugador.html";
 }
 
 function showMultijugador()
 {
-    document.location.href = "multijugador.html";
+    document.location.href = "options/multijugador.html";
 }
 
 function showAyuda()
 {
-    document.location.href = "ayuda.html";
+    document.location.href = "options/ayuda.html";
 }
 
 function showCreditos()
 {
-    document.location.href = "creditos.html";
+    document.location.href = "options/creditos.html";
 }

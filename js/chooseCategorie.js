@@ -5,6 +5,7 @@ var animales;
 var deporte;
 var cine;
 var todas;
+var home;
 
 window.onload = inicializar;
 
@@ -23,6 +24,7 @@ function inicializarVariables()
     deporte = document.getElementById("deporte");
     cine = document.getElementById("cine");
     todas = document.getElementById("todas");
+    home = document.getElementById("iconoHome");
 }
 
 function inicializarEventos()
@@ -34,39 +36,45 @@ function inicializarEventos()
     deporte.addEventListener("click", showDeporte);
     cine.addEventListener("click", showCine);
     todas.addEventListener("click", showTodas);
+    home.addEventListener("click", showMenu);
 }
 
 function showGeografia()
 {
-    document.location.href = "categories/gastronomia.html";
+    document.location.href = "categories.html";
 }
 
 function showGastronomia()
 {
-    document.location.href = "categories/geografia.html";
+    document.location.href = "categories.html";
 }
 
 function showHistoria()
 {
-    document.location.href = "categories/historia.html";
+    document.location.href = "categories.html";
 }
 
 function showAnimales()
 {
-    document.location.href = "categories/animales.html";
+    document.location.href = "categories.html";
 }
 
 function showDeporte()
 {
-    document.location.href = "categories/deporte.html";
+    document.location.href = "categories.html";
 }
 
 function showCine()
 {
-    document.location.href = "categories/cine.html";
+    document.location.href = "categories.html";
 }
 
 function showTodas()
 {
-    document.location.href = "categories/todas.html";
+    document.location.href = "categories.html";
+}
+
+function showMenu()
+{
+    document.location.href = "../menu.html";
 }
