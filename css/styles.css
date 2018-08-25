@@ -1,3 +1,8 @@
+.fondoCategoria
+{
+    background-image: url('../img/fondoCategoria.png');
+}
+
 #iconoHome:hover
 {
     background-image: url('../img/homeHover.png');
@@ -6,8 +11,8 @@
 #iconoHome
 {
     transition: 0.15s;
-    width: 25px;
-    height: 27px;
+    width: 48px;
+    height: 48px;
     background-image: url('../img/home.png');
     position: fixed;
     top: 5px;
