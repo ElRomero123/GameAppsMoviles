@@ -204,6 +204,15 @@
 }
 /* Alfabeto */
 
+#entrada
+{
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    top: 150px;
+    left: 10px;
+}
+
 /* Ingreso de jugador1. */
 .input:focus
 {
