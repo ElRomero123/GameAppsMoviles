@@ -1,10 +1,214 @@
+/* Alfabeto */
+.alfabeto:hover
+{
+    filter: invert(100%);
+}
+
+.alfabeto
+{
+    transition: 0.15s;
+    position: fixed;
+    width: 29px;
+    height: 29px;
+    transition: 0.15s;
+}
+
+#z
+{
+    background-image: url("../img/abecedario/z.png");
+    top: 480px;
+    left: 340px;
+}
+
+#y
+{
+    background-image: url("../img/abecedario/y.png");
+    top: 480px;
+    left: 300px;
+}
+
+#x
+{
+    background-image: url("../img/abecedario/x.png");
+    top: 480px;
+    left: 260px;
+}
+
+#w
+{
+    background-image: url("../img/abecedario/w.png");
+    top: 480px;
+    left: 220px;
+}
+
+#v
+{
+    background-image: url("../img/abecedario/v.png");
+    top: 480px;
+    left: 180px;
+}
+
+#u
+{
+    background-image: url("../img/abecedario/u.png");
+    top: 480px;
+    left: 140px;
+}
+
+#t
+{
+    background-image: url("../img/abecedario/t.png");
+    top: 480px;
+    left: 100px;
+}
+
+#s
+{
+    background-image: url("../img/abecedario/s.png");
+    top: 480px;
+    left: 60px;
+}
+
+#r
+{
+    background-image: url("../img/abecedario/r.png");
+    top: 480px;
+    left: 20px;
+}
+
+#q
+{
+    background-image: url("../img/abecedario/q.png");
+    top: 440px;
+    left: 340px;
+}
+
+#p
+{
+    background-image: url("../img/abecedario/p.png");
+    top: 440px;
+    left: 300px;
+}
+
+#o
+{
+    background-image: url("../img/abecedario/o.png");
+    top: 440px;
+    left: 260px;
+}
+
+#ne
+{
+    background-image: url("../img/abecedario/ne.png");
+    top: 440px;
+    left: 220px;
+}
+
+#n
+{
+    background-image: url("../img/abecedario/n.png");
+    top: 440px;
+    left: 180px;
+}
+
+#m
+{
+    background-image: url("../img/abecedario/m.png");
+    top: 440px;
+    left: 140px;
+}
+
+#l
+{
+    background-image: url("../img/abecedario/l.png");
+    top: 440px;
+    left: 100px;
+}
+
+#k
+{
+    background-image: url("../img/abecedario/k.png");
+    top: 440px;
+    left: 60px;
+}
+
+#j
+{
+    background-image: url("../img/abecedario/j.png");
+    top: 440px;
+    left: 20px;
+}
+
+#i
+{
+    background-image: url("../img/abecedario/i.png");
+    top: 400px;
+    left: 340px;
+}
+
+#h
+{
+    background-image: url("../img/abecedario/h.png");
+    top: 400px;
+    left: 300px;
+}
+
+#g
+{
+    background-image: url("../img/abecedario/g.png");
+    top: 400px;
+    left: 260px;
+}
+
+#f
+{
+    background-image: url("../img/abecedario/f.png");
+    top: 400px;
+    left: 220px;
+}
+
+#e
+{
+    background-image: url("../img/abecedario/e.png");
+    top: 400px;
+    left: 180px;
+}
+
+#d
+{
+    background-image: url("../img/abecedario/d.png");
+    top: 400px;
+    left: 140px;
+}
+
+#c
+{
+    background-image: url("../img/abecedario/c.png");
+    top: 400px;
+    left: 100px;
+}
+
+#b
+{
+
+    background-image: url("../img/abecedario/b.png");
+    top: 400px;
+    left: 60px;
+}
+
+#a
+{
+    background-image: url("../img/abecedario/a.png");
+    top: 400px;
+    left: 20px;
+}
+/* Alfabeto */
+
 /* Ingreso de jugador1. */
 .input:focus
 {
     width: 165px;
-    outline: 0px;
     border: 2px solid green;
-    position: fixed;
 }
 
 .input
@@ -33,7 +237,7 @@
 /* Botón devolverse a ventana anterior. */
 #iconoAtras:hover
 {
-    background-image: url('../img/atrasHover.png');
+    filter: invert(100%);
 }
 
 #iconoAtras
@@ -43,8 +247,8 @@
     width: 47px;
     height: 47px;
     position: fixed;
-    top: 570px;
-    left: 20px;
+    top: 80px;
+    left: 10px;
 }
 /* Botón devolverse a ventana anterior. */
 
@@ -60,7 +264,7 @@
 /* Botón devolverse al menú. */
 #iconoHome:hover
 {
-    background-image: url('../img/homeHover.png');
+    filter: invert(100%);
 }
 
 #iconoHome
@@ -132,16 +336,13 @@
 /* Estilos CSS de las opciones del menú. */
 .cardOption:hover
 {
-    border: 2px solid orange;
-    background-color: orange;
+    filter: invert(100%);
 }
 
 .cardOption
 {
     transition: 0.15s;
     margin: 5px;
-    border: 1px solid black; 
-    background-color: black;
     width: 110px;
     height: 25px;
 }
