@@ -1,6 +1,7 @@
 var home;
 var atras;
-var entrada;
+var a; var b; var c; var d; var e; var f; var g; var h;
+var texto;
 
 window.onload = inicializar;
 
@@ -14,14 +15,21 @@ function inicializarVariables()
 {
     home = document.getElementById("iconoHome");
     atras = document.getElementById("iconoAtras");
-    entrada = document.getElementById("entrada");
+    texto = document.getElementById("texto");
+    a = document.getElementById("a");
+    b = document.getElementById("b");
+    c = document.getElementById("c");
+    d = document.getElementById("d");
 }
 
 function inicializarEventos()
 {
     home.addEventListener("click", showHome);
     atras.addEventListener("click", showAtras);
-    $("#container").on("click", ".alfabeto", writeCharacter);
+    a.addEventListener("click", writeCharacter);
+    b.addEventListener("click", writeCharacter);
+    c.addEventListener("click", writeCharacter);
+    d.addEventListener("click", writeCharacter);
 }
 
 function showHome()
@@ -37,6 +45,6 @@ function showAtras()
 function writeCharacter()
 {
     var id = this.id;
-    alert(id);
-    entrada.value += id;
+    texto.innerText = id;
+    /*alert(id); */
 }
