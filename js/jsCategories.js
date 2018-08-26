@@ -37,5 +37,6 @@ function showAtras()
 function writeCharacter()
 {
     var id = this.id;
+    alert(id);
     entrada.value += id;
 }
