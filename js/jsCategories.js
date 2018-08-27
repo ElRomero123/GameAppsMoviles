@@ -103,6 +103,7 @@ function writeCharacter()
     var cadena = ""; // La cadená que se modificará durante todo el proceso
     var lastCadena = texto.innerText.split(""); // Obtiene la cadena anterior
     var contador = 0;
+    var contador2 = 0;
 
     // Verificar si existe la letra y si la palabra NO está finalizada
     for(var i=0; i < size; i++)
@@ -133,6 +134,7 @@ function writeCharacter()
                 // No altera los espacios que ya tienen letras
                 if(lastCadena[i] != "-")
                 {
+                    contador2 ++;
                     cadena += lastCadena[i];
                 }
                 // No altera los espacios que ya tienen letras
@@ -156,13 +158,21 @@ function writeCharacter()
     {
         if(contador == size)
         {
-
+            state.innerText = "Felicitaciones, no te dejaste ahorcar. Vamos a ver si puedes en la proxima.";
         }
 
         else
         {
-            intentos--;
-            state.innerText = "No existe la letra, intentos: " + intentos;
+            if(intentos == 1)
+            {
+                state.innerText = "Estas ahorcado, la palabra era: " + palabraSeleccionada;
+            }
+
+            else
+            {
+                intentos--;
+                state.innerText = "No existe la letra, intentos: " + intentos;
+            }
         }
     }
 }
