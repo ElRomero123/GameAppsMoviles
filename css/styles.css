@@ -5,8 +5,9 @@
     width: 51px;
     height: 113px;
     position: fixed;
-    top: 180px;
-    left: 215px;
+    top: 273px;
+    left: 250px;
+    display: none;
 }
 
 #piernaDerecha
@@ -15,8 +16,9 @@
     width: 51px;
     height: 113px;
     position: fixed;
-    top: 180px;
-    left: 190px;
+    top: 273px;
+    left: 225px;
+    display: none;
 }
 
 #brazoIzquierdo
@@ -25,8 +27,9 @@
     width: 55px;
     height: 122px;
     position: fixed;
-    top: 110px;
-    left: 232px;
+    top: 200px;
+    left: 263px;
+    display: none;
 }
 
 #brazoDerecho
@@ -35,8 +38,9 @@
     width: 51px;
     height: 106px;
     position: fixed;
-    top: 120px;
-    left: 175px;
+    top: 205px;
+    left: 205px;
+    display: none;
 }
 
 #tronco
@@ -45,25 +49,27 @@
     width: 86px;
     height: 102px;
     position: fixed;
-    top: 95px;
-    left: 190px;
+    top: 185px;
+    left: 220px;
+    display: none;
 }
 
 #cabeza
 {
     background-image: url("../img/body/cabeza.png");
-    width: 152px;
-    height: 200px;
+    width: 112px;
+    height: 238px;
     position: fixed;
-    top: -45px;
-    left: 140px;
+    top: -10px;
+    left: 180px;
+    display: none;
 }
 /* Partes del ahorcado */
 
 #state
 {
     position: fixed;
-    top: 320px;
+    top: 550px;
     left: 10px;
     background-color: orange;
     font-family:  arial;

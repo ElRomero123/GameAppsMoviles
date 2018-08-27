@@ -5,7 +5,8 @@ var texto;
 var state;
 var gastronomia = ["aceite", "aguacate", "alcachofa", "almejas", "almendras", "arroz", "avellana", "azucar", "brocoli", "calabaza", "cangrejo", "carne", "cebolla", "cereales", "cerezas", "coco", "espinacas", "frambuesa", "fresa", "fruta", "gamba", "garbanzo", "guisante", "harina", "huevo", "langosta", "langostinos", "leche", "lechuga", "legumbres", "lentejas", "lima", "limon", "mandarina", "mango", "manzana", "marisco", "melocoton", "melon"];
 var palabraSeleccionada;
-var intentos = 8;
+var intentos = 6;
+var cabeza, brazoIzquierdo, brazoDerecho, piernaDerecha, piernaIzquierda, tronco;
 
 window.onload = inicializar;
 
@@ -49,6 +50,12 @@ function inicializarVariables()
     x = document.getElementById("x");
     y = document.getElementById("y");
     z = document.getElementById("z");
+    cabeza = document.getElementById("cabeza");
+    tronco = document.getElementById("tronco");
+    brazoDerecho = document.getElementById("brazoDerecho");
+    brazoIzquierdo = document.getElementById("brazoIzquierdo");
+    piernaDerecha = document.getElementById("piernaDerecha");
+    piernaIzquierda = document.getElementById("piernaIzquierda"); 
 }
 
 function inicializarEventos()
@@ -103,7 +110,6 @@ function writeCharacter()
     var cadena = ""; // La cadená que se modificará durante todo el proceso
     var lastCadena = texto.innerText.split(""); // Obtiene la cadena anterior
     var contador = 0;
-    var contador2 = 0;
 
     // Verificar si existe la letra y si la palabra NO está finalizada
     for(var i=0; i < size; i++)
@@ -134,7 +140,6 @@ function writeCharacter()
                 // No altera los espacios que ya tienen letras
                 if(lastCadena[i] != "-")
                 {
-                    contador2 ++;
                     cadena += lastCadena[i];
                 }
                 // No altera los espacios que ya tienen letras
@@ -163,15 +168,18 @@ function writeCharacter()
 
         else
         {
-            if(intentos == 1)
+            if(intentos == 0)
             {
                 state.innerText = "Estas ahorcado, la palabra era: " + palabraSeleccionada;
             }
 
             else
             {
+
                 intentos--;
                 state.innerText = "No existe la letra, intentos: " + intentos;
+
+                graficarAhorcado(intentos);
             }
         }
     }
@@ -182,7 +190,7 @@ function cargarPalabra()
     var sizeWords = gastronomia.length - 1; // Posición final del arreglo de palabras
     var aleatorio = Math.round(Math.random()*(sizeWords)); // Selecciona una posición desde 0 hasta la posición final
     palabraSeleccionada = gastronomia[aleatorio]; // Obtiene la palabra dada la posición
-    alert(palabraSeleccionada); // Muestra la palabra seleccionada
+    //alert(palabraSeleccionada); // Muestra la palabra seleccionada
     var size = palabraSeleccionada.length; // Obtiene el tamaño de la palabra seleccionada
 
     // Crea una cadena de espacios (-) del mismo tamaño de la palabra
@@ -195,4 +203,28 @@ function cargarPalabra()
 
     // Pone la cadena en pantalla
     texto.innerText = string;
+}
+
+function graficarAhorcado(intentos)
+{
+    switch(intentos)
+    {
+        case 5:  cabeza.style.display = 'inline';
+        break;
+
+        case 4:  tronco.style.display = 'inline';
+        break;
+
+        case 3:  brazoDerecho.style.display = 'inline';
+        break;
+
+        case 2:  brazoIzquierdo.style.display = 'inline';
+        break;
+
+        case 1:  piernaDerecha.style.display = 'inline';
+        break;
+
+        case 0:  piernaIzquierda.style.display = 'inline';
+        break;
+    }
 }
