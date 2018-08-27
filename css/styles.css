@@ -1,3 +1,27 @@
+#state
+{
+    position: fixed;
+    top: 300px;
+    left: 50px;
+}
+
+#texto
+{
+    position: fixed;
+    top: 200px;
+    left: 60px;
+}
+
+#putWord
+{
+    position: fixed;
+    top: 200px;
+    left: 40px;
+    width: 179px;
+    height: 38px;
+    background-image: url("../img/putWord.png");
+}
+
 /* Alfabeto */
 .alfabeto:hover
 {

@@ -2,8 +2,10 @@ var home;
 var atras;
 var a; var b; var c; var d; var e; var f; var g; var h; var i; var j; var k; var l; var m; var n; var ne; var o; var p; var q; var s; var t; var w; var x; var y; var z;
 var texto;
+var state;
 var gastronomia = ["aceite", "aguacate", "alcachofa", "almejas", "almendras", "arroz", "avellana", "azucar", "brocoli", "calabaza", "cangrejo", "carne", "cebolla", "cereales", "cerezas", "coco", "espinacas", "frambuesa", "fresa", "fruta", "gamba", "garbanzo", "guisante", "harina", "huevo", "langosta", "langostinos", "leche", "lechuga", "legumbres", "lentejas", "lima", "limon", "mandarina", "mango", "manzana", "marisco", "melocoton", "melon"];
 var palabraSeleccionada;
+var intentos = 8;
 
 window.onload = inicializar;
 
@@ -19,6 +21,7 @@ function inicializarVariables()
     home = document.getElementById("iconoHome");
     atras = document.getElementById("iconoAtras");
     texto = document.getElementById("texto");
+    state = document.getElementById("state");
     a = document.getElementById("a");
     b = document.getElementById("b");
     c = document.getElementById("c");
@@ -93,24 +96,29 @@ function showAtras()
 
 function writeCharacter()
 {
-    var id = this.id;
-    var size = palabraSeleccionada.length;
+    var id = this.id; // Obtiene el caracter adecuado
+    var size = palabraSeleccionada.length; // Obtiene el tamaño de la palabra propuesta
     var variable = palabraSeleccionada.split("");
     var existChar = false;
-    var cadena = "";
-    var lastCadena = texto.innerText.split("");
-    
-    // Verificar si existe la letra
+    var cadena = ""; // La cadená que se modificará durante todo el proceso
+    var lastCadena = texto.innerText.split(""); // Obtiene la cadena anterior
+    var contador = 0;
+
+    // Verificar si existe la letra y si la palabra NO está finalizada
     for(var i=0; i < size; i++)
     {
         if(variable[i] == id)
         {
-            existChar = true;
+            existChar = true; 
+        }
+
+        if(lastCadena[i] != "-")
+        {
+            contador ++;
         }
     }
-    // Verificar si existe la letra
 
-    // Reemplazar y actualizar
+    // Reemplaza y actualiza la cadena anterior
     if(existChar)
     {
         for(var i=0; i < size; i++)
@@ -122,36 +130,52 @@ function writeCharacter()
     
             else
             {
+                // No altera los espacios que ya tienen letras
                 if(lastCadena[i] != "-")
                 {
                     cadena += lastCadena[i];
                 }
+                // No altera los espacios que ya tienen letras
 
                 else
                 {
                     cadena += "-";
                 }
             }
+
+            document.getElementById(id).style.filter = "invert(100%)";   
         }
 
         lastCadena = null;
         texto.innerText = cadena;
     }
-    // Reemplazar y actualizar
+    // Reemplaza y actualiza la cadena anterior
 
+    // Indica que la cadena no existe dentro de la palabra
     else
     {
-        alert("No existe la letra, menos intentos restantes ...");
-    }  
+        if(contador == size)
+        {
+
+        }
+
+        else
+        {
+            intentos--;
+            state.innerText = "No existe la letra, intentos: " + intentos;
+        }
+    }
 }
 
 function cargarPalabra()
 {
-    var aleatorio = Math.round(Math.random()*gastronomia.length);
-    palabraSeleccionada = gastronomia[aleatorio];
-    alert(palabraSeleccionada);
-    var size = palabraSeleccionada.length;
+    var sizeWords = gastronomia.length - 1; // Posición final del arreglo de palabras
+    var aleatorio = Math.round(Math.random()*(sizeWords)); // Selecciona una posición desde 0 hasta la posición final
+    palabraSeleccionada = gastronomia[aleatorio]; // Obtiene la palabra dada la posición
+    alert(palabraSeleccionada); // Muestra la palabra seleccionada
+    var size = palabraSeleccionada.length; // Obtiene el tamaño de la palabra seleccionada
 
+    // Crea una cadena de espacios (-) del mismo tamaño de la palabra
     var string = "";
 
     for(var i=0; i < size; i++)
@@ -159,5 +183,6 @@ function cargarPalabra()
         string += "-";
     }
 
+    // Pone la cadena en pantalla
     texto.innerText = string;
 }
