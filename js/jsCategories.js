@@ -1,9 +1,14 @@
 var home;
 var atras;
+var newWord;
 var a; var b; var c; var d; var e; var f; var g; var h; var i; var j; var k; var l; var m; var n; var ne; var o; var p; var q; var s; var t; var w; var x; var y; var z;
 var texto;
 var state;
+var geografia = ["albania", "andorra", "argentina", "australia", "austria", "belgica", "bolivia", "brasil", "bulgaria", "canada", "chile", "colombia", "croacia", "dinamarca", "finlandia", "francia", "alemania", "grecia", "vaticano", "honduras", "islandia", "italia", "luxemburgo", "macedonia", "malta", "mexico", "monaco", "nicaragua", "noruega", "peru", "polonia", "portugal", "rumania", "singapur", "suecia", "suiza", "venezuela", "montenegro"];
 var gastronomia = ["aceite", "aguacate", "alcachofa", "almejas", "almendras", "arroz", "avellana", "azucar", "brocoli", "calabaza", "cangrejo", "carne", "cebolla", "cereales", "cerezas", "coco", "espinacas", "frambuesa", "fresa", "fruta", "gamba", "garbanzo", "guisante", "harina", "huevo", "langosta", "langostinos", "leche", "lechuga", "legumbres", "lentejas", "lima", "limon", "mandarina", "mango", "manzana", "marisco", "melocoton", "melon"];
+var historia = ["afluente", "albania", "atenas", "arabia", "austria", "australia", "america", "aeropuerto", "continente"];
+var animales = ["afluente", "albania", "atenas", "arabia", "austria", "australia", "america", "aeropuerto", "continente"];
+var deporte = ["afluente", "albania", "atenas", "arabia", "austria", "australia", "america", "aeropuerto", "continente"];
 var palabraSeleccionada;
 var intentos = 6;
 var cabeza, brazoIzquierdo, brazoDerecho, piernaDerecha, piernaIzquierda, tronco;
@@ -23,6 +28,7 @@ function inicializarVariables()
     atras = document.getElementById("iconoAtras");
     texto = document.getElementById("texto");
     state = document.getElementById("state");
+    newWord = document.getElementById("newWord"); 
     a = document.getElementById("a");
     b = document.getElementById("b");
     c = document.getElementById("c");
@@ -62,6 +68,7 @@ function inicializarEventos()
 {
     home.addEventListener("click", showHome);
     atras.addEventListener("click", showAtras);
+    newWord.addEventListener("click", actualizar);
     a.addEventListener("click", writeCharacter);
     b.addEventListener("click", writeCharacter);
     c.addEventListener("click", writeCharacter);
@@ -126,7 +133,7 @@ function writeCharacter()
     }
 
     // Reemplaza y actualiza la cadena anterior
-    if(existChar)
+    if(existChar && intentos > 0)
     {
         for(var i=0; i < size; i++)
         {
@@ -187,22 +194,22 @@ function writeCharacter()
 
 function cargarPalabra()
 {
-    var sizeWords = gastronomia.length - 1; // Posición final del arreglo de palabras
-    var aleatorio = Math.round(Math.random()*(sizeWords)); // Selecciona una posición desde 0 hasta la posición final
-    palabraSeleccionada = gastronomia[aleatorio]; // Obtiene la palabra dada la posición
-    //alert(palabraSeleccionada); // Muestra la palabra seleccionada
-    var size = palabraSeleccionada.length; // Obtiene el tamaño de la palabra seleccionada
-
-    // Crea una cadena de espacios (-) del mismo tamaño de la palabra
-    var string = "";
-
-    for(var i=0; i < size; i++)
+    var numero = localStorage.getItem('categorie');
+    var arreglo;
+    switch(numero)
     {
-        string += "-";
+        case '1': arreglo = geografia;
+        break;
+        case '2': arreglo = gastronomia;
+        break;
+        case '3': arreglo = historia;
+        break;
+        case '4': arreglo = animales;
+        break;
+        case '5': arreglo = deporte;
     }
 
-    // Pone la cadena en pantalla
-    texto.innerText = string;
+    cargarCategoria(arreglo);
 }
 
 function graficarAhorcado(intentos)
@@ -227,4 +234,29 @@ function graficarAhorcado(intentos)
         case 0:  piernaIzquierda.style.display = 'inline';
         break;
     }
+}
+
+function actualizar()
+{
+    location.reload();
+}
+
+function cargarCategoria(arreglo)
+{
+    var sizeWords = arreglo.length - 1; // Posición final del arreglo de palabras
+    var aleatorio = Math.round(Math.random()*(sizeWords)); // Selecciona una posición desde 0 hasta la posición final
+    palabraSeleccionada = arreglo[aleatorio]; // Obtiene la palabra dada la posición
+    //alert(palabraSeleccionada); // Muestra la palabra seleccionada
+    var size = palabraSeleccionada.length; // Obtiene el tamaño de la palabra seleccionada
+
+    // Crea una cadena de espacios (-) del mismo tamaño de la palabra
+    var string = "";
+
+    for(var i=0; i < size; i++)
+    {
+        string += "-";
+    }
+
+    // Pone la cadena en pantalla
+    texto.innerText = string;
 }
