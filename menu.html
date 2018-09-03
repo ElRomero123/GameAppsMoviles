@@ -101,7 +101,6 @@
             {
                 texto = document.getElementById("texto");
                 state = document.getElementById("state");
-                //newWord = document.getElementById("newWord"); 
                 a = document.getElementById("a");
                 b = document.getElementById("b");
                 c = document.getElementById("c");
@@ -138,7 +137,6 @@
 
             function inicializarEventos()
             {
-                newWord.addEventListener("click", actualizar);
                 a.addEventListener("click", writeCharacter);
                 b.addEventListener("click", writeCharacter);
                 c.addEventListener("click", writeCharacter);
@@ -153,7 +151,6 @@
                 l.addEventListener("click", writeCharacter);
                 m.addEventListener("click", writeCharacter);
                 n.addEventListener("click", writeCharacter);
-                ne.addEventListener("click", writeCharacter);
                 o.addEventListener("click", writeCharacter);
                 p.addEventListener("click", writeCharacter);
                 q.addEventListener("click", writeCharacter);
@@ -262,11 +259,8 @@
                     break;
                     case '2': arreglo = gastronomia;
                     break;
-                    case '3': arreglo = historia;
+                    default: arreglo = historia;
                     break;
-                    case '4': arreglo = animales;
-                    break;
-                    case '5': arreglo = deporte;
                 }
 
                 cargarCategoria(arreglo);
@@ -276,22 +270,22 @@
             {
                 switch(intentos)
                 {
-                    case 5:  cabeza.style.visibility = visible;
+                    case 5:  cabeza.style.visibility = 'visible';
                     break;
 
-                    case 4:  tronco.style.visibility = visible;
+                    case 4:  tronco.style.visibility = 'visible';
                     break;
 
-                    case 3:  brazoDerecho.style.visibility = visible;
+                    case 3:  brazoDerecho.style.visibility = 'visible';
                     break;
 
-                    case 2:  brazoIzquierdo.style.visibility = visible;
+                    case 2:  brazoIzquierdo.style.visibility = 'visible';
                     break;
 
-                    case 1:  piernaDerecha.style.visibility = visible;
+                    case 1:  piernaDerecha.style.visibility = 'visible';
                     break;
 
-                    case 0:  piernaIzquierda.style.visibility = visible;
+                    case 0:  piernaIzquierda.style.visibility = 'visible';
                     break;
                 }
             }
