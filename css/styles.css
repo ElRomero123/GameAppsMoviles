@@ -1,22 +1,122 @@
+/* Estilos botón menú */
+#menuJugando:focus
+{
+    filter: invert(100%);
+}
+
+#menuJugando
+{
+    transition: 0.15s;
+    background-image: url("../img/botones/bHome.png");
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    top: 3770px;
+    left: 280px;
+}
+/* Estilos botón menú */
+
+/* Estilos botón atras */
+.atras:focus
+{
+    filter: invert(100%);
+}
+
+.atras
+{
+    transition: 0.15s;
+    background-image: url("../img/botones/bAtras.png");
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    left: 10px;
+}
+
+#atrasCategoria
+{
+    top: 1220px;
+}
+
+#atrasMultijugador
+{
+    top: 1850px;
+}
+
+#atrasAyuda
+{
+    top: 2500px;
+}
+
+#atrasCreditos
+{
+    top: 3140px;
+}
+
+#atrasJugando
+{
+    top: 3770px;
+}
+/* Estilos botón atras */
+
+/* Opciones único jugador */
+.option:focus
+{
+    color: orange;
+    font-size: 30px;
+}
+
+.option
+{
+    cursor: hand;
+    transition: 0.15s;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    left: 100px;
+}
+
+#historia
+{
+    top: 1010px; 
+}
+
+#gastronomia
+{
+    top: 980px;
+}
+
+#geografia
+{
+    top: 950px;
+}
+/* Opciones único jugador */
+
 /* Fondo de cada ventana */
+#jugando
+{    
+    background-image: url("../img/fondos/fJugando.png");  
+}
+
 #creditos
 {    
-    background-image: url("../img/fondoCreditos.png");  
+    background-image: url("../img/fondos/fCreditos.png");  
 }
 
 #ayuda
 {
-    background-image: url("../img/fondoAyuda.png");
+    background-image: url("../img/fondos/fAyuda.png");
 }
 
 #multijugador
 {
-    background-image: url("../img/fondoMultijugador.png");
+    background-image: url("../img/fondos/fMultijugador.png");
 }
 
-#jugador
+#categoria
 {
-    background-image: url("../img/fondoJugador.png");
+    background-image: url("../img/fondos/fCategoria.png");
 }
 /* Fondo de cada ventana */
 
@@ -29,7 +129,6 @@
 .cardOption
 {
     transition: 0.15s;  
-    text-decoration: none;
     margin: 5px;
     width: 110px;
     height: 25px;
@@ -39,31 +138,31 @@
 
 #opcionCreditos
 {    
-    background-image: url("../img/creditos.png");
+    background-image: url("../img/botones/bCreditos.png");
     top: 350px; 
 }
 
 #opcionAyuda
 {
-    background-image: url("../img/ayuda.png");
+    background-image: url("../img/botones/bAyuda.png");
     top: 320px;
 }
 
 #opcionMultijugador
 {
-    background-image: url("../img/multijugador.png");
+    background-image: url("../img/botones/bMultijugador.png");
     top: 290px;
 }
 
 #opcionJugador
 {
-    background-image: url("../img/jugador.png");
+    background-image: url("../img/botones/bJugador.png");
     top: 260px;
 }
 
 #menu
 {
-    background-image: url("../img/fondoJuego.png");
+    background-image: url("../img/fondos/fMenu.png");
 }
 /* Estilos CSS del menú */
 
