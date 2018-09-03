@@ -1,3 +1,202 @@
+/* Alfabeto */
+.letra:hover
+{
+    filter: invert(100%);
+}
+
+.letra
+{
+    transition: 0.15s;
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    transition: 0.15s;
+}
+
+#z
+{
+    background-image: url("../img/botones/abecedario/z.png");
+    top: 3720px;
+    left: 50px;
+}
+
+#y
+{
+    background-image: url("../img/botones/abecedario/y.png");
+    top: 3720px;
+    left: 10px;
+}
+
+#x
+{
+    background-image: url("../img/botones/abecedario/x.png");
+    top: 3680px;
+    left: 290px;
+}
+
+#w
+{
+    background-image: url("../img/botones/abecedario/w.png");
+    top: 3680px;
+    left: 250px;
+}
+
+#v
+{
+    background-image: url("../img/botones/abecedario/v.png");
+    top: 3680px;
+    left: 210px;
+}
+
+#u
+{
+    background-image: url("../img/botones/abecedario/u.png");
+    top: 3680px;
+    left: 170px;
+}
+
+#t
+{
+    background-image: url("../img/botones/abecedario/t.png");
+    top: 3680px;
+    left: 130px;
+}
+
+#s
+{
+    background-image: url("../img/botones/abecedario/s.png");
+    top: 3680px;
+    left: 90px;
+}
+
+#r
+{
+    background-image: url("../img/botones/abecedario/r.png");
+    top: 3680px;
+    left: 50px;
+}
+
+#q
+{
+    background-image: url("../img/botones/abecedario/q.png");
+    top: 3680px;
+    left: 10px;
+}
+
+#p
+{
+    background-image: url("../img/botones/abecedario/p.png");
+    top: 3640px;
+    left: 290px;
+}
+
+#o
+{
+    background-image: url("../img/botones/abecedario/o.png");
+    top: 3640px;
+    left: 250px;
+}
+
+#n
+{
+    background-image: url("../img/botones/abecedario/n.png");
+    top: 3640px;
+    left: 210px;
+}
+
+#m
+{
+    background-image: url("../img/botones/abecedario/m.png");
+    top: 3640px;
+    left: 170px;
+}
+
+#l
+{
+    background-image: url("../img/botones/abecedario/l.png");
+    top: 3640px;
+    left: 130px;
+}
+
+#k
+{
+    background-image: url("../img/botones/abecedario/k.png");
+    top: 3640px;
+    left: 90px;
+}
+
+#j
+{
+    background-image: url("../img/botones/abecedario/j.png");
+    top: 3640px;
+    left: 50px;
+}
+
+#i
+{
+    background-image: url("../img/botones/abecedario/i.png");
+    top: 3640px;
+    left: 10px;
+}
+
+#h
+{
+    background-image: url("../img/botones/abecedario/h.png");
+    top: 3600px;
+    left: 290px;
+}
+
+#g
+{
+    background-image: url("../img/botones/abecedario/g.png");
+    top: 3600px;
+    left: 250px;
+}
+
+#f
+{
+    background-image: url("../img/botones/abecedario/f.png");
+    top: 3600px;
+    left: 210px;
+}
+
+#e
+{
+    background-image: url("../img/botones/abecedario/e.png");
+    top: 3600px;
+    left: 170px;
+}
+
+#d
+{
+    background-image: url("../img/botones/abecedario/d.png");
+    top: 3600px;
+    left: 130px;
+}
+
+#c
+{
+    background-image: url("../img/botones/abecedario/c.png");
+    top: 3600px;
+    left: 90px;
+}
+
+#b
+{
+
+    background-image: url("../img/botones/abecedario/b.png");
+    top: 3600px;
+    left: 50px;
+}
+
+#a
+{
+    background-image: url("../img/botones/abecedario/a.png");
+    top: 3600px;
+    left: 10px;
+}
+/* Alfabeto */
+
 /* Estilos botón menú */
 #menuJugando:focus
 {
