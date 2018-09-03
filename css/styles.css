@@ -21,7 +21,7 @@
 /* Fondo de cada ventana */
 
 /* Estilos CSS del menú */
-.cardOption:hover
+.cardOption:focus
 {
     filter: invert(100%);
 }
@@ -74,3 +74,10 @@
     height: 640px;
 }
 /* Tamaño del fondo */
+
+/* Los fondos NO tienen margenes */
+body
+{
+    margin: 0px;
+}
+/* Los fondos NO tienen margenes */
