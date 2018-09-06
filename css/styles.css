@@ -226,13 +226,14 @@
 }
 
 /* Reiniciar Juego */
-#reload:focus
+#reload:hover
 {
     background-color: goldenrod;
 }
 
 #reload
 {
+    transition: 0.15s;
     outline: 0px;
     border: 1px solid black;
     background-color: gray;
@@ -305,7 +306,7 @@
 /* Partes del ahorcado */
 
 /* Estilos botón menú */
-#menuJugando:focus
+#menuJugando:hover
 {
     filter: invert(100%);
 }
@@ -317,13 +318,13 @@
     width: 47px;
     height: 47px;
     position: absolute;
-    top: 3770px;
+    top: 3230px;
     left: 280px;
 }
 /* Estilos botón menú */
 
 /* Estilos botón atras */
-.atras:focus
+.atras:hover
 {
     filter: invert(100%);
 }
@@ -340,32 +341,32 @@
 
 #atrasCategoria
 {
-    top: 1220px;
+    top: 650px;
 }
 
 #atrasMultijugador
 {
-    top: 1850px;
+    top: 1290px;
 }
 
 #atrasAyuda
 {
-    top: 2500px;
+    top: 2010px;
 }
 
 #atrasCreditos
 {
-    top: 3140px;
+    top: 2630px;
 }
 
 #atrasJugando
 {
-    top: 3770px;
+    top: 3230px;
 }
 /* Estilos botón atras */
 
 /* Opciones único jugador */
-.option:focus
+.option:hover
 {
     color: orange;
     font-size: 30px;
@@ -427,7 +428,7 @@
 /* Fondo de cada ventana */
 
 /* Estilos CSS del menú */
-.cardOption:focus
+.cardOption:hover
 {
     filter: invert(100%);
 }
