@@ -1,97 +1,3 @@
-/* Partes del ahorcado */
-#piernaIzquierda
-{
-    background-image: url("../img/fondos/cuerpo/piernaIzquierda.png");
-    width: 51px;
-    height: 113px;
-    position: absolute;
-    top: 3461px;
-    left: 250px;
-    visibility: hidden;
-
-}
-
-#piernaDerecha
-{
-    background-image: url("../img/fondos/cuerpo/piernaDerecha.png");
-    width: 51px;
-    height: 113px;
-    position: absolute;
-    top: 3461px;
-    left: 225px;
-    visibility: hidden;
-}
-
-#brazoIzquierdo
-{
-    background-image: url("../img/fondos/cuerpo/bIzquierdo.png");
-    width: 55px;
-    height: 122px;
-    position: absolute;
-    top: 3396px;
-    left: 263px;
-    visibility: hidden;
-}
-
-#brazoDerecho
-{
-    background-image: url("../img/fondos/cuerpo/bDerecho.png");
-    width: 51px;
-    height: 106px;
-    position: absolute;
-    top: 3396px;
-    left: 205px;
-    visibility: hidden;
-}
-
-#tronco
-{
-    background-image: url("../img/fondos/cuerpo/tronco.png");
-    width: 86px;
-    height: 102px;
-    position: absolute;
-    top: 3374px;
-    left: 220px;
-    visibility: hidden;
-}
-
-#cabeza
-{
-    background-image: url("../img/fondos/cuerpo/cabeza.png");
-    width: 112px;
-    height: 238px;
-    position: absolute;
-    top: 3179px;
-    left: 180px;
-    visibility: hidden;
-}
-/* Partes del ahorcado */
-
-#state
-{
-    position: absolute;
-    top: 3500px;
-    left: 30px;
-    background-color: blue;
-}
-
-#texto
-{
-    position: absolute;
-    top: 3450px;
-    left: 30px;
-}
-
-#putWord
-{
-    background-image: url("../img/botones/cPalabra.png");
-    width: 179px;
-    height: 38px;
-    position: absolute;
-    top: 3450px;
-    left: 20px;
-}
-
 /* Alfabeto */
 .letra:hover
 {
@@ -109,7 +15,7 @@
 
 #z
 {
-    background-image: url("../img/botones/abecedario/z.png");
+    background-image: url("../img/botones/abecedario/z.png"); 
     top: 3720px;
     left: 50px;
 }
@@ -291,6 +197,112 @@
     left: 10px;
 }
 /* Alfabeto */
+
+#estado
+{
+    font-family: roboto light;
+    color: white;
+    position: absolute;
+    top: 3510px;
+    left: 20px;
+    background-color: orangered;
+}
+
+#texto
+{
+    position: absolute;
+    top: 3450px;
+    left: 30px;
+}
+
+#fondoPalabra
+{
+    background-image: url("../img/botones/cPalabra.png");
+    width: 179px;
+    height: 38px;
+    position: absolute;
+    top: 3450px;
+    left: 20px;
+}
+
+/* Reiniciar Juego */
+#reload:focus
+{
+    background-color: goldenrod;
+}
+
+#reload
+{
+    outline: 0px;
+    border: 1px solid black;
+    background-color: gray;
+    position: absolute;
+    top: 3500px;
+    left: 20px;
+}
+/* Reiniciar Juego */
+
+/* Partes del ahorcado */
+.cuerpo
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+#piernaIzquierda
+{
+    background-image: url("../img/fondos/cuerpo/piernaIzquierda.png"); 
+    width: 51px;
+    height: 113px;
+    top: 3461px;
+    left: 250px;
+}
+
+#piernaDerecha
+{
+    background-image: url("../img/fondos/cuerpo/piernaDerecha.png");
+    width: 51px;
+    height: 113px;
+    top: 3461px;
+    left: 225px;
+}
+
+#brazoIzquierdo
+{
+    background-image: url("../img/fondos/cuerpo/bIzquierdo.png"); 
+    width: 55px;
+    height: 122px;
+    top: 3396px;
+    left: 263px;
+}
+
+#brazoDerecho
+{
+    background-image: url("../img/fondos/cuerpo/bDerecho.png");
+    width: 51px;
+    height: 106px;
+    top: 3396px;
+    left: 205px;
+}
+
+#tronco
+{
+    background-image: url("../img/fondos/cuerpo/tronco.png");
+    width: 86px;
+    height: 102px;
+    top: 3374px;
+    left: 220px;
+}
+
+#cabeza
+{
+    background-image: url("../img/fondos/cuerpo/cabeza.png");
+    width: 112px;
+    height: 238px;
+    top: 3179px;
+    left: 180px;
+}
+/* Partes del ahorcado */
 
 /* Estilos botón menú */
 #menuJugando:focus
