@@ -166,9 +166,6 @@ function writeCharacter()
         if(contador == size)
         {
             estado.innerText = "FELICITACIONES, no te dejaste ahorcar. Vamos a ver si puedes en la próxima.";
-            //location.href = "#menu";
-            setTimeout("ToMenu()", 3000);
-            //setTimeout(ToMenu, 3000);
         }
 
         else
@@ -176,8 +173,6 @@ function writeCharacter()
             if(intentos == 0)
             {
                 estado.innerText = "ESTÁS AHORCADO, la palabra era: " + palabraSeleccionada;
-                setTimeout("ToMenu()", 3000);
-                //location.href = "#menu";
             }
 
             else
@@ -274,9 +269,4 @@ function opcion3()
 {
     location.reload();
     localStorage.setItem('option', '3');
-}
-
-function ToMenu()
-{
-    location.href = "#menu";
 }

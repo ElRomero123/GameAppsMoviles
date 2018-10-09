@@ -446,12 +446,18 @@
 #opcionCreditos
 {    
     background-image: url("../img/botones/bCreditos.png");
-    top: 320px; 
+    top: 350px; 
 }
 
 #opcionAyuda
 {
     background-image: url("../img/botones/bAyuda.png");
+    top: 320px;
+}
+
+#opcionMultijugador
+{
+    background-image: url("../img/botones/bMultijugador.png");
     top: 290px;
 }
 
@@ -478,7 +484,6 @@
 /* Los fondos NO tienen margenes */
 body
 {
-    overflow: hidden;
     margin: 0px;
 }
 /* Los fondos NO tienen margenes */
